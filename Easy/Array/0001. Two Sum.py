@@ -5,10 +5,10 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        h = {}
-        for i, num in enumerate(nums):
-            n = target - num
-            if n not in h:
-                h[num] = i
+        dict = {}
+        
+        for i in range(len(nums)):
+            if target - nums[i] not in dict:
+                dict[nums[i]] = i
             else:
-                return [h[n], i]
+                return[dict[target - nums[i]], i]
