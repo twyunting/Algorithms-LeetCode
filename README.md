@@ -1,2 +1,3 @@
 # Leetcode
-based on Python 3
+1. Based on Python 3
+2. Started to 2020/05/20, 520 is not a good day to love someone else but it is a good day to be a coding mania.
