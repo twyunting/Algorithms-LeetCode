@@ -16,7 +16,7 @@ class Solution:
         
         
        
-    # Dicttionary Method
+    # Dictionary Method
         
         class Solution:
     def minimumAbsDifference(self, arr: List[int]) -> List[List[int]]:
