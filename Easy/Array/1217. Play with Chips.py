@@ -10,4 +10,6 @@ class Solution:
                 odd_parity += 1
             
         return min(even_parity, odd_parity)
+    
+    
 
