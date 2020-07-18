@@ -4,10 +4,11 @@ class Solution:
         result = -1
         
         for i, j in Counter(arr).items():
-            if i == j and i > result:
-                result = i
+            if i == j:
+                result = max(i, result)
         
         return result
+    
         
         
 # Brute Force
