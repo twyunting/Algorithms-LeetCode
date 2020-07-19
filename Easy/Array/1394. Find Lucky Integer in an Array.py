@@ -1,3 +1,5 @@
+# First
+
 class Solution:
     def findLucky(self, arr: List[int]) -> int:
         
@@ -9,7 +11,23 @@ class Solution:
         
         return result
     
+# Second
+    
+class Solution:
+    def findLucky(self, arr: List[int]) -> int:
         
+        max_num = -1
+        count = Counter(arr)
+        
+        for i in count.values():
+            if count[i] == i:
+                max_num = max(i, max_num)
+                
+        return max_num
+    
+    
+    
+    
         
 # Brute Force
 
