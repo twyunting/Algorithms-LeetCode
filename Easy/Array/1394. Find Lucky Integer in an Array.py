@@ -11,6 +11,7 @@ class Solution:
         
         return result
     
+    
 # Second
     
 class Solution:
@@ -24,10 +25,8 @@ class Solution:
                 max_num = max(i, max_num)
                 
         return max_num
-    
-    
-    
-    
+      
+        
         
 # Brute Force
 
