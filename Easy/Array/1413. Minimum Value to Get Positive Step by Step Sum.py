@@ -23,3 +23,6 @@ class Solution:
             minSunValue = max(minSunValue, 1-prefixSum)
         
         return minSunValue
+    
+    
+    
