@@ -12,3 +12,5 @@ class Solution:
                 dict[nums[i]] = i
             else:
                 return[dict[target - nums[i]], i]
+            
+            
