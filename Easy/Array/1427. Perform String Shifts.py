@@ -18,9 +18,9 @@ class Solution:
         move = 0
         for x, y in shift:
             if x == 0:
-                move -= y
+                move -= y #left
             else:
-                move += y
+                move += y #right
         move %= len(s)
         return s[-move:] + s[:-move]
     
