@@ -2,7 +2,7 @@ class Solution:
     def stringShift(self, s: str, shift: List[List[int]]) -> str:
     
         for direction, amount in shift:
-            amount %= len(s)
+            amount %= len(s) #optional
             
             if direction == 0: #left shift
                 s = s[amount:] + s[:amount]
