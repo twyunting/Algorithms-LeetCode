@@ -17,8 +17,12 @@ class Solution:
         res = []
         
         for i, j in zip(L, R):
+          res += [i,j]
+          """
+          OR:
             res += i,
             res += j,
+          """
         return res
         
         
