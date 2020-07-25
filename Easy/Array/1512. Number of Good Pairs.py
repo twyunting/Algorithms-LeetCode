@@ -9,4 +9,17 @@ class Solution:
         return count
             
             
-            
+# Counter
+
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        
+        aaa = Counter(nums)
+        count = 0
+        
+        for x, y in aaa.items():
+            count += (y* (y-1)//2)
+        return int(count)
+    
+    
+    
