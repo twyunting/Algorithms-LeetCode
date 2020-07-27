@@ -22,5 +22,20 @@ class Solution:
             n = total
         return True
     
+
+# Same way but different output
+
+class Solution:
+    def isHappy(self, n: int) -> bool:
+        s = set()
+        while n != 1 and n not in s:
+            s.add(n)
+            total = 0
+            for i in str(n):
+                total += pow(int(i),2)
+            n = total
+        return n == 1
+    
+    
     
         
