@@ -13,6 +13,15 @@ class Solution:
             elif d[s[i]] != t[i]:
                 return False
         return True
+    
+ # set solution
+
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        
+        return len(set(s)) == len(set(zip(s,t))) == len(set(t))
+    
+    
         
         
         
