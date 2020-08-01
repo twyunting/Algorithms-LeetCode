@@ -5,7 +5,7 @@ class Solution:
             return False
         return self.isIso(s, t) and self.isIso(t, s)
     
-    def isIso(self,s ,t ):
+    def isIso(self, s, t):
         d = {}
         for i in range(len(s)):
             if s[i] not in d:
