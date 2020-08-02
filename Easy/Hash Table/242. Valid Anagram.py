@@ -6,4 +6,11 @@ class Solution:
         
         return ds == dt
         
+# sorted
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
         
+        return sorted(s) == sorted(t)
+    
+    
