@@ -28,9 +28,9 @@ class Solution:
 
 遍歷摘要：
 
-若nums [i] nums [i]不在hashhash中，則令nums [i] nums [i]為鍵，值為當前的索引ii。
+若nums [i] nums [i]不在hashhash中，則令nums [i] nums [i]為鍵，值為當前的索引i。
 若已存在：
-如果滿足，返回TrueTrue。
+如果滿足，返回True。
 將索引更新為當前索引，hash [nums [i]] = ihash [nums [i]] = i
 返回False
 
