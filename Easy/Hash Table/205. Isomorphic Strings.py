@@ -39,6 +39,36 @@ class Solution:
             else:
                 dict[s[i]] = t[i]
         return True
+
+# Two Hashmap
+
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        
+        if len(s) != len(t):
+            return False
+        ds = {}
+        dt = {}
+        
+        for i in range(len(s)):
+            if s[i] not in ds:
+                ds[s[i]] = t[i]
+            else:
+                if ds[s[i]] != t[i]:
+                    return False
+                else:
+                    continue
+        
+        for j in range(len(t)):
+            if t[j] not in dt:
+                dt[t[j]] = s[j]
+            else:
+                if dt[t[j]] != s[j]:
+                    return False
+                else:
+                    continue
+        return True
+    
     
     
         
