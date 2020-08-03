@@ -19,6 +19,6 @@ class Solution:
 class Solution:
     def canPermutePalindrome(self, s: str) -> bool:
         
-        return sum( i % 2 for i in collections.Counter(s).values()) <= 1
+        return sum( i % 2 != 0 for i in collections.Counter(s).values()) <= 1
     
     
