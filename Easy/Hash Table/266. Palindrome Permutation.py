@@ -14,4 +14,11 @@ class Solution:
         else:
             return True
             
-       
+ # one line
+
+class Solution:
+    def canPermutePalindrome(self, s: str) -> bool:
+        
+        return sum( i % 2 for i in collections.Counter(s).values()) <= 1
+    
+    
