@@ -40,5 +40,16 @@ class Solution:
                 d[pattern[i]] = strr[i]
         return True
                 
-                
+# set method
+
+class Solution:
+    def wordPattern(self, pattern: str, str: str) -> bool:
+      
+        strr = str.split() #default() is blank
+        if len(pattern) != len(strr):
+            return False
+        
+        return len(set(pattern)) == len(set(zip(pattern, strr))) == len(set(strr))
+    
+    
                 
