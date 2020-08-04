@@ -26,19 +26,20 @@ class Solution:
 
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
-
+        
         if len(s) != len(t):
             return False
-        dict = {}
+        d = {}
+      
         for i in range(len(s)):
-            if s[i] in dict:
-                if t[i] != dict[s[i]]:
-                    return False
-            elif t[i] in dict.values():
+            if s[i] not in d and t[i] not in d.values():
+                d[s[i]] = t[i]
+            elif s[i] not in d or t[i] not in d.values():
                 return False
-            else:
-                dict[s[i]] = t[i]
+            elif d[s[i]] != t[i]:
+                return False
         return True
+          
 
 # Two Hashmap
 
