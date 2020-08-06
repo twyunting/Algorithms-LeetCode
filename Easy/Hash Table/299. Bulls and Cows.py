@@ -44,4 +44,24 @@ class Solution:
                 B += min(secretdic[i], guessdic[i])
         return "{}A{}B".format(A, B)
         
+# zip solution
+
+class Solution:
+    def getHint(self, secret: str, guess: str) -> str:
+        
+        sdic, gdic = defaultdict(int), defaultdict(int)
+        A, B = 0, 0 #A = bull, B = cow
+        
+        for s, g in zip(secret, guess):
+            if s == g:
+                A += 1
+            else:
+                sdic[s] += 1
+                gdic[g] += 1
+        
+        for i in sdic:
+            if i in gdic:
+                B += min(sdic[i], gdic[i])
+        return "%dA%dB" % (A,B)
+        
         
