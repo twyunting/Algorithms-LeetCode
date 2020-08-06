@@ -17,3 +17,31 @@ class Solution:
     number = 31 
     print '%s %d' % (name, number) 
     """
+
+# two hashmap with different output
+
+class Solution:
+    def getHint(self, secret: str, guess: str) -> str:
+        
+        secretdic, guessdic = {}, {}
+        A, B = 0, 0 #A = bull, B = cow
+        
+        for i in range(len(secret)):
+            if secret[i] == guess[i]:
+                A += 1
+            else:
+                if secret[i] in secretdic:
+                    secretdic[secret[i]] += 1
+                else:
+                    secretdic[secret[i]] = 1
+                if guess[i] in guessdic:
+                    guessdic[guess[i]] += 1
+                else:
+                    guessdic[guess[i]] = 1
+        
+        for i in secretdic:
+            if i in guessdic:
+                B += min(secretdic[i], guessdic[i])
+        return "{}A{}B".format(A, B)
+        
+        
