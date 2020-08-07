@@ -7,7 +7,5 @@ class Solution:
                 w1 = i
             elif j == word2:
                 w2 = i
-        
-            distance = min(abs(w1-w2), distance)
-        
+            distance = min(distance, abs(w1-w2))
         return distance
