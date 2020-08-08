@@ -53,7 +53,7 @@ class Solution:
         
         for i in c1:
             if i in c2:
-                res += [i] * min(c1[i], c2[i])
+                res += [i] * min(c1[i], c2[i]) #key * values
         return res
     
     
