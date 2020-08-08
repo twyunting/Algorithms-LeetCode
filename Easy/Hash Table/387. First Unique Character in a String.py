@@ -1,3 +1,5 @@
+# dic
+
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         
@@ -10,4 +12,15 @@ class Solution:
                 return s.index(i)
         return -1
         
+# Counter
+
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
         
+        count = Counter(s)
+        
+        for i, j in enumerate(s):
+            if count[j] == 1:
+                return i
+        return -1
+            
