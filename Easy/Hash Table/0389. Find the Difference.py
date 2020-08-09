@@ -33,6 +33,10 @@ class Solution:
             if S[i] != T[i]: 
                 return T[i]
             i += 1
-        return T[i]
+            
+        # if no, return the last one
+        return T[-1] 
+                
+        
     
     
