@@ -13,11 +13,11 @@ class Logger:
         The timestamp is in seconds granularity.
         """
         if message not in self.d:
-            self.d[message] = timestamp
+            self.d[message] = timestamp #construct the dic with keys and values
             return True
         elif message in self.d:
-            if abs(self.d[message]-timestamp) >= 10:
-                self.d[message] = timestamp
+            if abs(self.d[message]-timestamp) >= 10: #can be printed more than 10
+                self.d[message] = timestamp # replace the previous one
                 return True
             else:
                 return False
