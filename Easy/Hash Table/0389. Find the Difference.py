@@ -20,3 +20,19 @@ class Solution:
             if i not in ds or j > ds[i]:
                 return i
                 
+# sorted
+
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+    
+        S = sorted(s)
+        T = sorted(t)
+        i = 0
+        
+        while i < len(S) and i < len(T): 
+            if S[i] != T[i]: 
+                return T[i]
+            i += 1
+        return T[i]
+    
+    
