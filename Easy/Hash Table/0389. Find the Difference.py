@@ -19,6 +19,19 @@ class Solution:
         for i, j in dt.items():
             if i not in ds or j > ds[i]:
                 return i
+
+# dic 2
+
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+    
+        ds = Counter(s)
+        
+        for i in t:
+            if i not in ds or ds[i] == 0:
+                return i
+            else:
+                ds[i] -= 1
                 
 # sorted
 
