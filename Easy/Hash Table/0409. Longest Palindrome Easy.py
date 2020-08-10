@@ -26,7 +26,7 @@ class Solution:
                 
         return one + count
         
-# offical answer
+# offical answer (Greedy approach)
 
 class Solution:
     def longestPalindrome(self, s: str) -> int:
