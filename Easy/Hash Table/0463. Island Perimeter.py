@@ -8,10 +8,10 @@ class Solution:
                 if grid[i][j] == 1:
                     result += 4
                     
-                    # i-1: check left 
+                    # i-1: check up
                     if i > 0 and grid[i-1][j] == 1: #the first index must be 4 so i>0
                         result -= 2
-                    # j-1: check up
+                    # j-1: check left
                     if j > 0 and grid[i][j-1] == 1: #the first index must be 4 so j>0
                         result -= 2 
         
