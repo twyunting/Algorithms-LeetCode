@@ -36,3 +36,20 @@ class Solution:
                 res.append(word)
         return res
     
+# more clear with set
+
+class Solution:
+    def findWords(self, words: List[str]) -> List[str]:
+        
+        row1 = set("QWERTYUIOPqwertyuiop")
+        row2 = set("ASDFGHJKLasdfghjkl")
+        row3 = set("ZXCVBNMzxcvbnm")
+        res = []
+        
+        for word in words:
+            i = set(word)
+            if i <= row1 or i <= row2 or i <= row3: # make sure input is in the same row
+                res.append(word)
+        return res
+    
+    
