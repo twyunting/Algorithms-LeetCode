@@ -19,7 +19,9 @@ class Solution:
                 
 """
 Approach 2: Better Counting
-Approach 2 has the same time and space complexity as Approach 1. Even though they have the same time and space complexities, Approach 2 is slightly more efficient than the Approach 1. Rather than checking 4 surrounding neighbors, we only need to check two neighbors (LEFT and UP) in Approach 2.
+Approach 2 has the same time and space complexity as Approach 1. 
+Even though they have the same time and space complexities, Approach 2 is slightly more efficient than the Approach 1. 
+Rather than checking 4 surrounding neighbors, we only need to check two neighbors (LEFT and UP) in Approach 2.
 
 """        
 
