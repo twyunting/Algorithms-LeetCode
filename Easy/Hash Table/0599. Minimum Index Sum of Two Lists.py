@@ -12,11 +12,11 @@ class Solution:
                 continue
             else:
                 if list2.index(j) + i < minimum[1]:
-                    first = j
+                    first = j         # j replace first
                     minimum = (j, list2.index(j)+i)
                 elif list2.index(j) + i == minimum[1]:
                     ans.append(j)
-        ans.append(first)  # first has be removed so needs to add again
+        ans.append(first)             # first has be removed so needs to add again
         
         return ans
     
