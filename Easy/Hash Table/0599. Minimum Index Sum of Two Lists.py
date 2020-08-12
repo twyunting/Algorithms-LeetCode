@@ -16,7 +16,7 @@ class Solution:
                     minimum = (j, list2.index(j)+i)
                 elif list2.index(j) + i == minimum[1]:
                     ans.append(j)
-        ans.append(first)
+        ans.append(first)  # first has be removed so needs to add again
         
         return ans
     
