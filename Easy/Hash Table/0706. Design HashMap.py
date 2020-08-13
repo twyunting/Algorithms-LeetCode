@@ -53,7 +53,7 @@ class MyHashMap:
         """
         value will always be non-negative.
         """
-        self.d[key] = value
+        self.d[key] = value # just save key and values in dic, it will not be negative number of values
 
     def get(self, key: int) -> int:
         """
