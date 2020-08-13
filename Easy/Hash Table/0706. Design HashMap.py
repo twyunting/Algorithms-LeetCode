@@ -1,26 +1,25 @@
+# Design a HashMap without using any built-in hash table libraries
+
 class MyHashMap:
 
     def __init__(self):
         """
         Initialize your data structure here.
         """
-        self.d = {} 
+        self.Hash=[None]*1000000
 
     def put(self, key: int, value: int) -> None:
         """
         value will always be non-negative.
         """
-        if key not in self.d:
-            self.d[key] = value
-        else:
-            self.d[key] = value
-
+        self.Hash[key]=value
+            
     def get(self, key: int) -> int:
         """
         Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key
         """
-        if key in self.d:
-            return self.d[key]
+        if self.Hash[key]!= None:
+            return self.Hash[key]
         else:
             return -1
 
@@ -28,8 +27,7 @@ class MyHashMap:
         """
         Removes the mapping of the specified value key if this map contains a mapping for the key
         """
-        if key in self.d:
-            del self.d[key] 
+        self.Hash[key] = None
 
 
 # Your MyHashMap object will be instantiated and called as such:
@@ -39,7 +37,7 @@ class MyHashMap:
 # obj.remove(key)
 
 
-# More clear and readable
+# More clear and readable with dic
 
 class MyHashMap:
 
