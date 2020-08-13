@@ -1,5 +1,7 @@
 # Design a HashMap without using any built-in hash table libraries
 
+# I use array's index to save keys 
+
 class MyHashMap:
 
     def __init__(self):
