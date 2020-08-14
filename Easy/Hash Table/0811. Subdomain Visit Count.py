@@ -7,7 +7,7 @@ class Solution:
             count, domain = cpdomain.split()
             subs = domain.split(".")
             for i in range(len(subs)):
-                counter[".".join(subs[i:])] += int(count)
+                counter[".".join(subs[i:])] += int(count) # bulid a dic
                 
         return [ f'{count} {domain}' for domain, count in counter.items()]
         
