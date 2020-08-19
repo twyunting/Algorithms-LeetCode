@@ -17,6 +17,6 @@ class Solution:
         if needle not in haystack:
             return -1
         else:
-            return haystack.index(needle)
+            return haystack.index(needle,0)
         
         
