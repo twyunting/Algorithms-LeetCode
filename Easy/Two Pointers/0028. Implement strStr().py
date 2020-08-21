@@ -1,13 +1,18 @@
-class Solution: 
-    def strStr(self, haystack: str, needle: str) -> int:
+def strStr(haystack, needle):
     
         for i in range(len(haystack)-len(needle)+1):
             if haystack[i: i+len(needle)] == needle:
                 return i
         return -1
-        
-# second
 
+haystack = "hello"
+needle = "ll"
+
+print(strStr(haystack, needle)) 
+
+
+# second
+"""
 class Solution: 
     def strStr(self, haystack: str, needle: str) -> int:
     
@@ -18,5 +23,7 @@ class Solution:
             return -1
         else:
             return haystack.index(needle,0)
+"""
+
         
         
