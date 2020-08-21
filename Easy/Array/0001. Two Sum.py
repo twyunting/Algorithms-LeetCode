@@ -13,4 +13,4 @@ class Solution:
             else:
                 return[dict[target - nums[i]], i]
             
-            
+print("Hello World")            
