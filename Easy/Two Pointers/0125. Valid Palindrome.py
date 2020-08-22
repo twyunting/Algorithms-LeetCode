@@ -24,3 +24,38 @@ def isPalindrome(s):
 s = "A man, a plan, a canal: Panama"
 
 print(isPalindrome(s))
+print(len(s))
+
+
+# Two pointers:
+
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        
+        left, right = 0, len(s)-1
+        while left < right:
+            str_left = s[left].lower()
+            str_right = s[right].lower()
+            if str_left.isalnum() and str_right.isalnum():
+                if str_left != str_right:
+                    return False
+                left += 1
+                right -= 1
+            else:
+                if not str_left.isalnum():
+                    left += 1
+                if not str_right.isalnum():
+                    right -= 1
+        return True 
+
+# elegant method
+
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        
+        string = "".join(i for i in s if i.isalnum())
+        low_string = string.lower()
+        
+        return low_string == low_string[::-1]
+        
+
