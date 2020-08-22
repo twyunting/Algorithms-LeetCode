@@ -7,7 +7,7 @@ def isPalindrome(s):
 	p1, p2 = 0, len(s)-1
 
 	while p1 < p2:
-		while p1 < p2 and not s[p1].isalnum():
+		while p1 < p2 and not s[p1].isalnum(): #Check if all the characters in the text are alphanumeric
 			p1 += 1
 		while p1 < p2 and not s[p2].isalnum():
 			p2 -= 1
@@ -26,7 +26,7 @@ s = "A man, a plan, a canal: Panama"
 print(isPalindrome(s))
 print(len(s))
 
-
+"""
 # Two pointers:
 
 class Solution:
@@ -47,15 +47,65 @@ class Solution:
                 if not str_right.isalnum():
                     right -= 1
         return True 
+"""
 
 # elegant method
 
-class Solution:
-    def isPalindrome(self, s: str) -> bool:
+def isPalindrome(s):
         
-        string = "".join(i for i in s if i.isalnum())
-        low_string = string.lower()
+    string = "".join(i for i in s if i.isalnum())
+    low_string = string.lower()
         
-        return low_string == low_string[::-1]
-        
+    return low_string == low_string[::-1]
 
+
+s = "race a car"
+
+print(isPalindrome(s))
+print(len(s))        
+
+# same method with another type of for loop
+
+def isPalindrome(s):
+        
+    string = ""
+    for i in s:
+        if i.isalnum():
+            string += string.join(i)
+    low_string = string.lower()
+
+    return low_string == low_string[::-1]
+
+
+s = "race a car"
+
+print(isPalindrome(s))
+# test zone
+
+def isPalindrome(s):
+        
+    string = "".join(i for i in s if i.isalnum())
+    low_string = string.lower()
+        
+    return low_string
+
+
+s = "race a car"
+
+print(isPalindrome(s))
+
+
+def isPalindrome(s):
+        
+    string = ""
+    for i in s:
+        if i.isalnum():
+            string += string.join(i)
+    low_string = string.lower()
+
+    return low_string
+
+
+s = "race a car"
+
+print(isPalindrome(s))
