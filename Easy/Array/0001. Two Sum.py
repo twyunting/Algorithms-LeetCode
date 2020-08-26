@@ -14,7 +14,7 @@ class Solution:
                 return[dict[target - nums[i]], i]
             
 print("Hello World")
-print("Hello world Again")
+print("Hello world again")
 
 
 
