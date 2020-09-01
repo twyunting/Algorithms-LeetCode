@@ -4,12 +4,11 @@ def reverseString(s):
 	:rtype: None Do not return anything, modify s in-place instead.
 	"""
 
-	res = []
-	for i in s:
-		res.append(s.pop())
-	return res
+	for i in range(len(s)):
+		s.insert(i, s.pop())
+	return s
 
-s = [1,2,3,4,5]
+s = ["h","e","l","l","o"]
 print(reverseString(s))
 
 
