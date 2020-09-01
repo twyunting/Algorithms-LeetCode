@@ -5,10 +5,21 @@ def reverseString(s):
 	"""
 
 	for i in range(len(s)):
-		s.insert(i, s.pop())
+		s.insert(i, s.pop()) # i= index order, s.pop()= element
 	return s
 
 s = ["h","e","l","l","o"]
 print(reverseString(s))
 
 
+"""
+offical answer
+
+class Solution:
+    def reverseString(self, s):
+        
+        left, right = 0, len(s) - 1
+        while left < right:
+            s[left], s[right] = s[right], s[left]
+            left, right = left + 1, right - 1
+"""
