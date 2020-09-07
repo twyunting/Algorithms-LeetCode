@@ -18,6 +18,6 @@ def reverseVowels(s):
 		return "".join(s)
 
 
-s = "leetcode"
+s = "A man, a plan, a canal: Panama"
 
 print(reverseVowels(s))
