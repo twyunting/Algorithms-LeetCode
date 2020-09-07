@@ -1,6 +1,7 @@
 def reverseVowels(s):
 
 	i, j = 0, len(s)-1
+	# .join() the list so need to set s with list type
 	s = list(s)
 
 	vowels = {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U"}
