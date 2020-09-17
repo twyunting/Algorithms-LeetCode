@@ -3,7 +3,7 @@ def isLongPressedName(name, typed):
 	:type name: str
 	:type typed: str
 	:rtpe: bool
-		"""
+	"""
 	if len(name) > len(typed):
 		return False
 
