@@ -19,7 +19,7 @@ print(isLongPressedName(name = "alex", typed = "aaleex"))
 
 
 """
-LeetCode answer"
+LeetCode answer
 
 class Solution:
     def isLongPressedName(self, A: str, B: str) -> bool:
@@ -27,7 +27,7 @@ class Solution:
         N = len(B)
         i = 0
         j = 0
-        last = '\0'
+        last = 0
         while not (i == M and j == N):
             if i < M and j < N and A[i] == B[j]:
                 last = A[i]
