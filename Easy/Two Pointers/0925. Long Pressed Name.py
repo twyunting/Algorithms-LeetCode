@@ -38,4 +38,6 @@ class Solution:
             else:
                 return False
         return True
+# https://leetcode.com/problems/long-pressed-name/discuss/183854/Javascript-Python3-C%2B%2B-2-Pointers
+
 """
