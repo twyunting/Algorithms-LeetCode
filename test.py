@@ -1,5 +1,2 @@
-
-a = "()[]{}"
-
-
-print(len(a))
+d = "()[]{}"
+print(len(d))

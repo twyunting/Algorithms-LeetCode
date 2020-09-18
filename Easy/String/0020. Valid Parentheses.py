@@ -8,9 +8,9 @@ def isValid(s):
 
 	for i in s:
 		if i in d:
-			res.append(d[i])
+			res.append(d[i]) # save the values in dict
 		elif res:
-			stack = res.pop()
+			stack = res.pop() 
 			if i != stack:
 				return False
 		else:
