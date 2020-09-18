@@ -16,3 +16,26 @@ def isLongPressedName(name, typed):
 	return i == len(name)
 
 print(isLongPressedName(name = "alex", typed = "aaleex"))
+
+
+"""
+LeetCode answer"
+
+class Solution:
+    def isLongPressedName(self, A: str, B: str) -> bool:
+        M = len(A)
+        N = len(B)
+        i = 0
+        j = 0
+        last = '\0'
+        while not (i == M and j == N):
+            if i < M and j < N and A[i] == B[j]:
+                last = A[i]
+                i += 1
+                j += 1
+            elif j < N and last == B[j]:
+                j += 1
+            else:
+                return False
+        return True
+"""
