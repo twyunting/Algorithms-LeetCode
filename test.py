@@ -1,5 +1,5 @@
 
-a = ["dogssssb","racedddddcar","carqqqqqqq"]
-a.sort()
+a = "()[]{}"
 
-print(a)
+
+print(len(a))
