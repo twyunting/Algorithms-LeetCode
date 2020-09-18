@@ -1,2 +1,5 @@
-x = pow(0.9938, 10)
-print(x)
+
+a = ["dogssssb","racedddddcar","carqqqqqqq"]
+a.sort()
+
+print(a)
