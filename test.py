@@ -1,2 +1,3 @@
-d = "()[]{}"
-print(len(d))
+a = int("11", 5)
+
+print(a)
