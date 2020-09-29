@@ -1,1 +1,5 @@
-0038. Count and Say.py
+def countAndSay(n):
+	"""
+	:type n: int
+	:rtype: str
+	"""
