@@ -14,3 +14,10 @@ def canConstruct(ransomNote, magazine):
 	return True
 
 print(canConstruct(ransomNote = "a", magazine = "aab"))
+
+"""
+# one line method
+ class Solution:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        return not (Counter(ransomNote) - Counter(magazine))
+"""
