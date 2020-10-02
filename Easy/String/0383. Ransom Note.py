@@ -4,12 +4,13 @@ def canConstruct(ransomNote, magazine):
 	:type magazine: str
 	:rtype: bool
 	"""
-	letters = {}
-	for i in magazine:
-		if i not in letters:
-			letters[i] = 1
-		else:
-			letters[i] += 1 # make a dic 
-	return letters
+	from collections import Counter
+	letters = Counter(magazine)
 
-print(canConstruct(ransomNote = "a", magazine = "aaavvvvvv"))
+	for j in ransomNote:
+		if letters[j] <= 0: 
+			return False
+			letters[j] -= 1 # minus values 
+	return True
+
+print(canConstruct(ransomNote = "a", magazine = "aab"))
