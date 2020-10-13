@@ -1,3 +1,3 @@
-a = int("11", 5)
+a = "Let's take LeetCode contest"
 
-print(a)
+print(len(a))
