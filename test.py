@@ -1,3 +1,7 @@
 a = "Let's take LeetCode contest"
 
-print(len(a))
+
+b = "abcdef"
+
+arr = a.split(" ")
+print(reversed(b))
