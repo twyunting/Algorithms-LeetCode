@@ -1,11 +1,9 @@
 # Python code to reverse 
 # a list using slicing 
   
-ls = ["abc", "def", "ghi"] 
-  
-# list reverse 
-ls = ls[::-1] 
-  
-print('Reversed list elements :') 
-for element in ls: 
-  print(element)
+aaa = "abca"
+
+print(aaa[4+1:])
+print(aaa[:4])
+
+print(aaa[4+1:]+aaa[:4])
