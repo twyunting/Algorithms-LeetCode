@@ -1,9 +1,8 @@
 # Python code to reverse 
 # a list using slicing 
   
-aaa = "abca"
+a = "sssss"
+b = "a", "s"
 
-print(aaa[4+1:])
-print(aaa[:4])
-
-print(aaa[4+1:]+aaa[:4])
+print(len(a))
+print(len(b))
