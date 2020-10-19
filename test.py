@@ -1,7 +1,7 @@
 # Python code to reverse 
 # a list using slicing 
   
-a = "sssss"
+a = str(1233)
 b = "a", "s"
 
 print(len(a))

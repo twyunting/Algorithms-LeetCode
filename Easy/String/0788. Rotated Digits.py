@@ -8,8 +8,8 @@ def rotatedDigits(N):
 		nums = str(i)
 		if "3" in nums or "4" in  nums or "7" in nums:
 			continue
-		if "0" in nums or "1" in  nums or "8" in nums:
-			continue
+		# if "0" in nums or "1" in  nums or "8" in nums: # we donot need this, ex: if your input is 12
+			# continue
 		if "2" in nums or "5" in nums or "6" in nums or "9" in nums:
 			count += 1
 
