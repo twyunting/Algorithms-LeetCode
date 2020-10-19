@@ -15,4 +15,4 @@ def rotatedDigits(N):
 
 	return count
 
-print(rotatedDigits(1))
+print(rotatedDigits(12))
