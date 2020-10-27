@@ -1,1 +1,6 @@
-0819. Most Common Word.py
+def mostCommonWord(paragraph, banned):
+	"""
+	:type paragraph: str
+	:type banned: List[str]
+	:rtype: str
+	"""
