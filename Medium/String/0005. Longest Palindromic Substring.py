@@ -1,1 +1,5 @@
-0005. Longest Palindromic Substring.py
+def longestPalindrome(s):
+	"""
+	:type s: str
+	:rtype: str
+	"""
