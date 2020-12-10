@@ -6,3 +6,6 @@ b = "a", "s"
 
 print(len(a))
 print(len(b))
+
+c = [44,33,22,11]
+print(c[2])
