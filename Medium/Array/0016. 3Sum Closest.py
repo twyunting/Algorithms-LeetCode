@@ -4,8 +4,8 @@ def threeSumClosest(nums, target):
 	:type target: int
 	:rtype: int
 	"""
-	nums = sorted(nums)
-	
+	nums.sort()
+
 
 
 
