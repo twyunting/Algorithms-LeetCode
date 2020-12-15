@@ -4,8 +4,12 @@ def threeSumClosest(nums, target):
 	:type target: int
 	:rtype: int
 	"""
-	nums.sort()
-
+	tmp = []
+	positive = []
+	for i in nums:
+		tmp.append(abs(i - target))
+	return tmp
+	
 
 
 
