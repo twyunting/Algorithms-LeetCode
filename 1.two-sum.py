@@ -1,6 +1,5 @@
 # @before-stub-for-debug-begin
-from python3problem1 import *
-from typing import *
+
 # @before-stub-for-debug-end
 
 #
@@ -10,13 +9,17 @@ from typing import *
 #
 
 # @lc code=start
+# 
+# print("hello")
+
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        
-# @lc code=end
+    def twoSum(self, nums, target) :
+
         d = {}
         for i in range(len(nums)):
             if target - nums[i] in d:
                 return [d[target-nums[i]], i]
             else:
-                d[nums[i]] = i
+                d[nums[i]] = i  
+# @lc code=end
+
