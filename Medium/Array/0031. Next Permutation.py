@@ -3,24 +3,39 @@ def nextPermutation(nums):
 	:type nums: List[int]
 	:rtype: None Do not return anything, modify nums in-place instead.
 	"""
-	i = j = len(nums)-1
-	while i > 0 and nums[i-1] >= nums[i]:
-		i -= 1
-
-	if i == 0:   # nums are in descending order
+	pivotFirst=-1
+	i=len(nums)-1
+	tmp=nums[-1]
+	while i>=0:
+		if nums[i]>=tmp:
+			tmp=nums[i]
+			i-=1
+		else:
+			pivotFirst=i
+			break
+	print(pivotFirst)
+	if pivotFirst==-1:
 		nums.reverse()
-		return 
-	k = i - 1    # find the last "ascending" position
+		return
+	pivotFirst=i
+	pivotSecond=-1
+	j=len(nums)-1
+	while(j>pivotFirst):
+		if nums[j]>nums[pivotFirst]:
+			pivotSecond=j
+			break
+		j-=1
 
-	while nums[j] <= nums[k]:
-		j -= 1
-	nums[k], nums[j] = nums[j], nums[k]  
+	print(pivotFirst,pivotSecond)
 
-	l, r = k+1, len(nums)-1  # reverse the second part
+	nums[pivotSecond],nums[pivotFirst]=nums[pivotFirst],nums[pivotSecond]
+	l,r = pivotFirst+1, len(nums)-1
 	while l < r:
 		nums[l], nums[r] = nums[r], nums[l]
-		l += 1 
+		l += 1
 		r -= 1
-	# reference: https://www.nayuki.io/page/next-lexicographical-permutation-algorithm
 
-print(nextPermutation(nums = [1,2,3,4,5]))
+nums = [5,1,1]
+print(nextPermutation(nums))
+print(nums)
+
