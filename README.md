@@ -3,4 +3,4 @@
 * The solutions are straightforward for beginners, and I am trying to make my answers to be pythonic and readable
 * Each submission shall have at least one answer.
 * Some questions have been written in `swift`, but just for fun.
-* Dec.18, 2020 I've changed to VS code with the Leedcode extension to write it so the floders have a little bit messy.
+* Dec.18, 2020 I've changed to VS code with the Leedcode extension to write it so the folders have a little bit messy.
