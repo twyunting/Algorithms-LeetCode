@@ -14,7 +14,7 @@ class Solution(object):
         """
         l, r = 0, len(nums)-1
         while l <= r:
-            mid = (l+r) // 2
+            mid = (l+r) // 2 # set mid as pivot
             if nums[mid] == target:
                 return mid
             elif nums[mid] >= nums[l]:
