@@ -12,6 +12,19 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-           
+        l, r = 0, len(nums)-1
+        while l <= r:
+            mid = (l+r) // 2
+            if nums[mid] == target:
+                return mid
+            if target >= nums[0]:
+                if nums[mid] > nums[0] and target > mid:
+                    mid = l + 1
+                else:
+                    mid = r - 1
+            else:
+                
+
+            
 # @lc code=end
 

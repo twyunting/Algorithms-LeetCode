@@ -1,11 +1,8 @@
 # Python code to reverse 
 # a list using slicing 
   
-a = str(1233)
-b = "a", "s"
 
-print(len(a))
-print(len(b))
+a = [4,5,6,7,0,1,2]
+mid = 15//2
 
-c = [44,33,22,11]
-print(c[2])
+print(mid)
