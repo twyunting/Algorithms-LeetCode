@@ -18,12 +18,16 @@ class Solution(object):
             if nums[mid] == target:
                 return mid
             if target >= nums[0]:
-                if nums[mid] > nums[0] and target > mid:
-                    mid = l + 1
+                if nums[mid] >= nums[0] and target > nums[mid]:
+                    l = mid + 1
                 else:
-                    mid = r - 1
-            else:
-                
+                    r = mid - 1
+            else: # target < nums[0]
+                if nums[mid] >= nums[0] or target > nums[mid]:
+                    l = mid + 1
+                else:
+                    r = mid - 1
+        return -1
 
             
 # @lc code=end
