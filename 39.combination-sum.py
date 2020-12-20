@@ -13,6 +13,8 @@ class Solution(object):
         :rtype: List[List[int]]
         """
     
+    for i in range(len(candidates)):
+        
         
 # @lc code=end
 
