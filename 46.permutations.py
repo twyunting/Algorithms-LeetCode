@@ -16,7 +16,7 @@ class Solution(object):
             return [nums]
 
         for idx, num in enumerate(nums):
-            n = nums[:idx] + nums[idx+1: ]
+            n = nums[:idx] + nums[idx+1: ] # excluding "n"
             for y in self.permute(n):
                 result.append([num] + y)
         return result 
