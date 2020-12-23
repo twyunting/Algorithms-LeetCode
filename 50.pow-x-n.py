@@ -12,7 +12,7 @@ class Solution(object):
         :type n: int
         :rtype: float
         """
-        
+        return x ** n
         
 # @lc code=end
 
