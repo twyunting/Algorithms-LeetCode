@@ -11,6 +11,9 @@ class Solution(object):
         :type n: int
         :rtype: List[List[int]]
         """
-        
+        if n == 1:
+            return [[n]]
+        if n > 1:
+            
 # @lc code=end
 
