@@ -11,8 +11,6 @@ class Solution(object):
         :type intervals: List[List[int]]
         :rtype: List[List[int]]
         """
-        intervals.sort()
-        print(intervals)
         
 # @lc code=end
 
