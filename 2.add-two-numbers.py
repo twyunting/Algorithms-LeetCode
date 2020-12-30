@@ -31,7 +31,7 @@ class Solution(object):
 
 
         """
-        #Solution 2
+        # Solution 2
         carry = 0
         dummy = ListNode(0)
         p = dummy
