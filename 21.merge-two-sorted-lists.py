@@ -17,6 +17,26 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
+        dummy = tail = ListNode(0)
+
+        if l1 is None:
+            return l2
+        if l2 is None:
+            return l1
+        
+        while l1 and l2:
+            if l1.val < l2.val:
+                tail.next = l1
+                l1 = l1.next
+            else:
+                tail.next = l2
+                l2 = l2.next
+            tail = tail.next
+        tail.next = l1 or l2
+        return dummy.next
+
+        """
+        # recursion solution
         if l1 is None:
             return l2
         if l2 is None:
@@ -28,7 +48,9 @@ class Solution(object):
         else:
             l2.next = self.mergeTwoLists(l1, l2.next)
             return l2
-        
+        """
+
+
         
 # @lc code=end
 
