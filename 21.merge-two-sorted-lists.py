@@ -32,6 +32,7 @@ class Solution(object):
                 tail.next = l2
                 l2 = l2.next
             tail = tail.next
+
         if l1:
             tail.next = l1
         if l2:
