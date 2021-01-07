@@ -12,19 +12,17 @@ class Solution(object):
         :type wordDict: List[str]
         :rtype: bool
         """
-        for i in s:
-            for j in wordDict:
-                for k in j:
-                    if k not in s and s[i:j] not in wordDict:
-                        return False
-        return True
+        dp = [False] * (len(s)+1)
+        dp[0] = True
 
+        for i in range(len(s)):
+            if dp[i]:
+                for word in wordDict:
+                    if s[i:i+len(word)] == word:
+                        dp[i+len(word)] = True
+        return dp[-1]
 
-
-
-            
-        
-        
+        # reference: https://youtu.be/5_T7ihU-zdo
 
         
 
