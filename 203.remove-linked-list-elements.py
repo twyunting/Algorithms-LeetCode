@@ -17,12 +17,24 @@ class Solution(object):
         :type val: int
         :rtype: ListNode
         """
-        dummy = start = ListNode(0)
-        start = head
+        # create dummy head
+        dummy = ListNode(0)
+        dummy.next = head
 
-        while start:
-            if start.val != val:
-                start = start.next
+        # initiate pre and cur node pointer
+        pre = dummy
+        cur = head
+
+        # iterate throough the entire linked list
+        while cur:
+            if cur.val == val:
+                pre.next = cur.next
+                cur = cur.next
+            else:
+                pre = cur
+                cur = cur.next
         return dummy.next
+
+
 # @lc code=end
 
