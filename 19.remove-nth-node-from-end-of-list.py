@@ -17,6 +17,31 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
+        # create dummy head
+        dummy_head = ListNode(0)
+        dummy_head.next = head
+
+        # identify the length
+        length = 0
+        node = head
+        while node:
+            node = node.next
+            length += 1
+
+        # identify the location to be removed
+        node = dummy_head
+        for _ in range(length-n):
+            node = node.next
         
+        # perform removal
+        previous = node
+        following = node.next.next
+        previous.next = following
+
+        return dummy_head.next
+
+            
+
+
 # @lc code=end
 
