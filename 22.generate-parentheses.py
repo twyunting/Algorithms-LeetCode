@@ -11,6 +11,7 @@ class Solution(object):
         :type n: int
         :rtype: List[str]
         """
+        
         ans = []
 
         def backtracking(S = "", left = 0, right = 0):
@@ -24,6 +25,7 @@ class Solution(object):
         backtracking("", 0, 0)
 
         return ans        
+    
 
 # @lc code=end
 
