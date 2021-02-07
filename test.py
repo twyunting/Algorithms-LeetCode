@@ -1,13 +1,13 @@
-import cv2
-import math
 import numpy as np
-import matplotlib.pyplot as plt
-from scipy.signal import convolve2d as conv2d
-import scipy.sparse as sps
-from PIL import Image
+a = 60
+c = 0
+m = 2**(31) -1
+x = 0.1
 
+for i in range(100):
 
-a = np.array([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
-print(a)
-b = np.array([[-1, -2, -1], [0, 0, 0], [1, 2, 1]])/8
-print(b)
+	x= np.mod((a*x+c),m)
+
+	uniform = x/m # generation of a uniform distribution in the range of [0, 1]
+
+	print(uniform)
