@@ -1,13 +1,10 @@
-import numpy as np
-a = 60
-c = 0
-m = 2**(31) -1
-x = 0.1
+A = "April"
+B = "May"
+C = A[len(B)]+B[len(A)//2] # C = i + y
+D = B[0]+A[0:2] # M + Ap
 
-for i in range(100):
 
-	x= np.mod((a*x+c),m)
+E = [11,22,33,44,55,66,77,88,99]
 
-	uniform = x/m # generation of a uniform distribution in the range of [0, 1]
-
-	print(uniform)
+# [start:stop:step]
+print(C)
