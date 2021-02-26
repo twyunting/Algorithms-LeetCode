@@ -7,13 +7,11 @@ def solution(data, n):
 			dic[i] = 1
 		else:
 			dic[i] += 1
-	print(dic)
 	for idx,item in enumerate(data):
-		if dic[item]<=n:
+		if dic[item] <= n:
 			res.append(item)
 	return res
 
-print(solution([1, 2, 2, 3, 3, 3, 4, 5, 5], 1))
 
 
 # ans is 1, 4
