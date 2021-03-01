@@ -11,7 +11,8 @@ class MyQueue(object):
         """
         Initialize your data structure here.
         """
-        
+        self.head = []
+        self.tail = []
 
     def push(self, x):
         """
@@ -19,7 +20,11 @@ class MyQueue(object):
         :type x: int
         :rtype: None
         """
-        
+        if not self.head:
+            self.head.append(x)
+            while self.head:
+                self.head.pop()
+            
 
     def pop(self):
         """
