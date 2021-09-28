@@ -1,3 +1,5 @@
+from fpdf import FPDF
+
 def nextPermutation(nums):
 	"""
 	:type nums: List[int]
@@ -39,3 +41,11 @@ nums = [5,1,1]
 print(nextPermutation(nums))
 print(nums)
 
+pdf = FPDF() # create pdf
+pdf.add_page() #add page!
+pdf.set_font("Arial", size=12) # font
+pdf.cell(200, 10, txt=str(gotmode), ln=1, align="C") #write to pdf, They need to be strings
+pdf.cell(200, 10, txt=str(gotmean), ln=1, align="C")
+pdf.cell(200, 10, txt=helloworld, ln=1, align="C")
+
+pdf.output("simple_demo.pdf") # output file
